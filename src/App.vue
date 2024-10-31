@@ -1,6 +1,6 @@
 <script setup>
 import NavBar from "./components/NavBar.vue";
-import HomeView from './views/HomeView.vue';
+import Footer from "./components/Footer.vue";
 
 </script>
 
@@ -10,5 +10,6 @@ import HomeView from './views/HomeView.vue';
     <main class="flex-grow">
       <router-view></router-view>
     </main>
+    <Footer />
   </div>
 </template>

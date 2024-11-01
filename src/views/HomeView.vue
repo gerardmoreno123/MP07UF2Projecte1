@@ -7,8 +7,9 @@
           <h1 class="text-5xl font-bold">Benvinguts a Vue SPA</h1>
           <p class="py-6">Una aplicació moderna construïda amb Vue 3, amb calculadora, integracions d'API i disseny responsiu.</p>
           <div class="flex gap-4 justify-center">
-            <router-link to="/calculator" class="btn btn-primary">Prova la Calculadora</router-link>
-            <router-link to="/comments" class="btn btn-secondary">Veure Comentaris</router-link>
+            <router-link :to="{ name: 'calculator' }" class="btn btn-primary">Prova la Calculadora</router-link>
+            <router-link :to="{ name: 'comments-api' }" class="btn btn-secondary">Veure Comentaris</router-link>
+            <router-link :to="{ name: 'users-api' }" class="btn btn-accent">Veure Usuaris</router-link>
           </div>
         </div>
       </div>
@@ -84,17 +85,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Call to Action -->
-    <div class="py-12 bg-base-200">
-      <div class="max-w-4xl mx-auto text-center px-4">
-        <h2 class="text-3xl font-bold mb-4">Preparat per començar?</h2>
-        <p class="mb-8">Descobreix totes les funcionalitats que oferim per millorar la teva experiència.</p>
-        <div class="flex gap-4 justify-center">
-          <router-link to="/users" class="btn btn-primary">Explora Usuaris</router-link>
-          <router-link to="/calculator" class="btn btn-secondary">Obre Calculadora</router-link>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
+<script setup lang="ts">
+</script>

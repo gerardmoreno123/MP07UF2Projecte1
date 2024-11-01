@@ -14,18 +14,18 @@ const isOpen = ref(false)
           </svg>
         </div>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li><router-link to="/calculator">Calculadora</router-link></li>
-          <li><router-link to="/comments">Comentaris</router-link></li>
-          <li><router-link to="/users">Usuaris</router-link></li>
+          <li><router-link :to="{ name: 'calculator' }">Calculadora</router-link></li>
+          <li><router-link :to="{ name: 'comments-api' }">Comentaris</router-link></li>
+          <li><router-link :to="{ name: 'users-api' }">Usuaris</router-link></li>
         </ul>
       </div>
       <router-link to="/" class="btn btn-ghost text-xl">Gerard Moreno Campos</router-link>
     </div>
     <div class="navbar-end hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
-        <li><router-link to="/calculator">Calculadora</router-link></li>
-        <li><router-link to="/comments">Comentaris</router-link></li>
-        <li><router-link to="/users">Usuaris</router-link></li>
+        <li><router-link :to="{ name: 'calculator' }">Calculadora</router-link></li>
+        <li><router-link :to="{ name: 'comments-api' }">Comentaris</router-link></li>
+        <li><router-link :to="{ name: 'users-api' }">Usuaris</router-link></li>
       </ul>
     </div>
   </div>

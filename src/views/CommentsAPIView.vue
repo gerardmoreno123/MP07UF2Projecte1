@@ -31,7 +31,7 @@ onMounted(async () => {
           <label>Error:</label>
           <p>{{ error }}</p>
         </div>
-
+      </div>
       <div class="space-y-4">
         <div v-for="comment in comments" :key="comment.id"
              class="card bg-base-100 shadow-xl">

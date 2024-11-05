@@ -63,7 +63,7 @@ function calculate() {
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 0C4.48 0 0 4.48 0 10c0 5.52 4.48 10 10 10s10-4.48 10-10S15.52 0 10 0zm1 15h-2v-2h2v2zm0-4h-2V5h2v6z" />
             </svg>
-            <span>Maximum of 20 digits reached</span>
+            <span>S'ha arribat al màxim de 20 dígits</span>
           </div>
         </div>
       </div>

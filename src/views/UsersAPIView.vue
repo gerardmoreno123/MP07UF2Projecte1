@@ -11,7 +11,7 @@ onMounted(async () => {
     const response = await axios.get('https://dummyjson.com/users')
     users.value = response.data.users
   } catch (e) {
-    error.value = 'Error loading users'
+    error.value = e
   } finally {
     loading.value = false
   }
